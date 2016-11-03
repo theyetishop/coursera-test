@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-family: 'Ultra', serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-align: center;
+	padding: 2%;
+}
+.row {
+    overflow: auto;
+    margin: 0;
+    padding: 1%;
+}
+
+/******** Note - overflow added for content overflowing box height *******/
+.meat1, .meat2, .meat3 {
+    background-color: #EBC5A9;
+    border: 1px solid black;
+    height: 230px;
+    margin: 1%;
+    overflow: auto;
+    position: relative;   
+}
+
+/******** Position the section title to the right *******/
+
+#item1, #item2, #item3 {
+    color: white;
+    font-family: 'Cookie', cursive;
+	font-size: 1.75em;
+	font-weight: 500;
+    width: 100px;
+	text-align: center;
+	padding: 0.5%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    right: 0;    
+}
+#item1 {
+    background-color: #FFBA39;
+}
+#item2 {
+    background-color: #754F16;
+}
+#item3 {
+    background-color: #FF8F83;
+}
+section p {
+    margin: 35px 0 5px 0;
+    padding: 5px;    
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+.container-fluid{
+    background-color: lightpink;
+    width: 100%;
+    margin: 0% auto;        
+    }
+.meat1, .meat2, .meat3 {
+    float: left;  
+}
+.meat1 {
+    width: 31.33%; /**** accounted for margin *****/
+}
+.meat2 {
+    width: 31.33%;
+}   
+.meat3 {
+    width: 31.33%;
+}           
+}
+
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.container-fluid{
+    background-color: lightgray;
+    width: 100%;
+    margin: 0% auto;        
+    }
+.meat1, .meat2, .meat3 {
+    float: left;
+}
+.meat1 {
+    width: 48%; /**** accounted for margin *****/
+}
+.meat2 {
+    width: 48%;
+}    
+.meat3 {
+    width: 98%;
+}           
+}
+
+/********** Mobile devices only will stack once min-width: 767px **********/
+@media (min-width: 0px) and (max-width: 767px) {
+.container-fluid{
+    background-color: lightblue;
+    width: 100%;
+    margin: 0% auto;        
+    }
+.meat1, .meat2, .meat3 {
+    float: left;
+  }
+.meat1 {
+    width: 98%; /**** accounted for margin *****/
+}
+.meat2 {
+    width: 98%;
+}   
+.meat3 {
+    width: 98%;
+}   
+}
+
+
