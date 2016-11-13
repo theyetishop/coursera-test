@@ -1,0 +1,170 @@
+/***Base Styles***/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', san-serif;
+}
+
+/** HEADER **/
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+#header-nav {
+  background-color: #3167FF;
+  border-radius: 0;
+  margin: 0;
+}
+/** Navbar - Restaurant name - Food, LLC **/
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand { 
+  margin: 0 0 0 30px;
+  padding: 0;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+.navbar-brand h1 {
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 8px;
+  height: 50px;
+  font-size: .90em;
+}
+.navbar-brand a {
+  color: #FFF;
+} 
+/** Button Style - Dropdown **/
+.icon-bar { /** button icon-bar style **/
+  border: 1px solid #FFF;
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFF;
+}
+.navbar-toggle { /** button mint green **/
+  background-color: #5EFFD1;
+}
+div#collapsable-nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a {
+  color: #575757;
+  text-align: center;
+  font-family:'Cookie', cursive;
+  font-size: 1.5em;
+  margin: 0;
+  background: #EBEBEB;
+  border-right: 1px solid #575757;
+  border-bottom: 1px solid #575757;
+  border-left: 1px solid #575757;
+}
+#nav-list .dropdown1 {
+  border-top: 1px solid #575757;
+}
+#nav-list .dropdown1 a:hover {
+  background: #FFBA39;
+  color: #FFF;
+}
+#nav-list .dropdown2 a:hover {
+  background: #754F16;
+  color: #FFF;
+}
+#nav-list .dropdown3 a:hover {
+  background: #FF8F83;
+  color: #FFF;
+}
+.row {
+  margin: 0;
+}
+
+/** Main Content Section **/
+#page-heading { /**Our Menu**/
+  padding: 1%;
+  font-family: 'Ultra', serif;
+  font-size: 1.5em; 
+}
+
+.col-xs-12 {
+  margin: 1%;
+  width: 100%;
+}
+
+#meatType {
+  font-family: 'Cookie', cursive;
+  font-size: 1.75em;
+  text-align: center;
+  color: #FFF;
+}
+
+section {
+  margin-bottom: 2%;
+  margin-top: 0%;
+  padding: 1.5%;
+  color: #FFF;
+}
+
+#item1 {
+  background-color: #FFBA39;
+}
+
+#item2 {
+  background-color: #754F16;
+}
+
+#item3 {
+  background-color: #FF8F83;
+}
+
+div#backtotop {
+  font-family: 'Cookie', cursive;
+  width: 98%;
+  font-size: 1.5em;
+}
+div#backtotop a:hover, div#backtotop a:focus {
+  text-decoration: none;
+}
+
+/********** Desktop - Medium devices only **********/
+@media (min-width: 992px){
+.col-xs-12 {
+    width: 98%;
+  }
+  
+}
+
+/********** Tablet - Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+.col-xs-12 {
+    width: 98%;
+  }
+}
+
+/********** Mobile - Extra small devices only **********/
+@media (max-width: 767px) {
+.col-xs-12 {
+    width: 98%;
+}
+.navbar-brand h1 {
+  padding-left: 0px;
+}
+#page-heading { /**Our Menu**/
+  padding: 2.5%;
+  }
+section {
+  margin-bottom: 4%;
+}
+}
+
+
